@@ -142,10 +142,14 @@ grid-template-columns: 1fr 1fr 1fr;
   display: grid;
   grid-template-columns: 1fr 1fr ;
   border-color: darkgray;
-  margin:0 10vw ;
+  margin:4em 13vw ;
+  border-bottom:ridge 4px;
+
+
 }
 .productimage{
   margin:3vw
+
 }
 .productname{
   display: block;
@@ -176,9 +180,9 @@ grid-template-columns: 1fr 1fr 1fr;
 } 
 
 .desc{
-  border-top:ridge 4px;
-  margin: 1em 10vw;
-  text-align: center;
+  margin: 1em 20vw;
+  width: 500px;
+
 }
 
 .quan{

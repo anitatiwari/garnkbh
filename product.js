@@ -33,7 +33,7 @@ document.querySelector(".smallimg2").src=product.img3;
 
   document.querySelector(".description1").textContent = product.description1;
 
-  document.querySelector(".description2").textContent = product.description2;
+  document.querySelector(".description2").innerHTML = product.description2;
  
   document.querySelector(".description3").textContent = product.description3;
   document.querySelector(".description4").textContent = product.description4;
