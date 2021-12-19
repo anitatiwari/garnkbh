@@ -1,3 +1,7 @@
+/* *{
+  margin: 15px;
+} */
+
 .header {
   display: flex;
   justify-content:space-between;
@@ -32,6 +36,8 @@ object-fit: cover;
 
 
 
+
+
 }
 .catagories{
     display: grid;
@@ -46,10 +52,10 @@ object-fit: cover;
   margin: 5px;
   border: 1px ridge;
   border-radius: 5px;
-  background-color: rgba(0,0, 0,0.07);
+  background-color: #eeb688e8;
 }
 .catagories div:hover{
-  background-color: rgb(187, 194, 146);
+  background-color: rgba(153, 119, 57, 0.349);
 }
 .catagories  a {
     
@@ -57,7 +63,7 @@ object-fit: cover;
     text-align: center;
     border-radius: 5px;
     font-size: larger;
-    color: brown;
+    color: rgb(134, 5, 5);
    
     
   
@@ -83,7 +89,7 @@ justify-content: center;
 }
 
  .welcome {
-  background-color: rgba(0,0, 0,0.1);
+  background-color:rgba(175, 19, 19, 0.07);
   color: #4b1c1c;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  
@@ -95,7 +101,7 @@ justify-content: center;
   top: -6vw;
   left: 35vw;
   font-weight:600;
-  text-align:center;
+  /* text-align:center; */
   background-color: rgba(0,0, 0,0.1);
   padding: 20px;
 
@@ -119,25 +125,48 @@ align-items: center;
 grid-template-columns: 1fr 1fr 1fr;
 }
 
-.footer {
-  padding-top: 30px;
-  background-color: #856424;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  color: white;
-  line-height: 1.5em;
+footer {
+  background-color:rgba(209, 160, 95, 0.808);
+
 }
+.footer1{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 2vw; 
+  color: rgb(109, 9, 9);
+
+
+}
+/* padding-top: 30px;
+background-color:rgba(209, 160, 95, 0.808);
+display: grid;
+grid-template-columns: 1fr 1fr 1fr ;
+padding-bottom: 20px;
+padding-left: 20px;
+color: rgb(109, 9, 9);
+line-height: 1.5em; */
+
 .rest-footer {
   display: grid;
   line-height: 1.5em;
   column-gap: 50px;
   padding-left: 40px;
 }
-.footer a {
+.footer1 li{
+  list-style-type: none;
+  margin: 20px;
+}
+.footer1 a {
   text-decoration: none;
-  color: white;
+  color: rgb(109, 9, 9);
+
+
+
+}
+.foot{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 4vw;
 }
 .first {
   padding-left: 60px;
@@ -150,10 +179,14 @@ grid-template-columns: 1fr 1fr 1fr;
   display: grid;
   grid-template-columns: 1fr 1fr ;
   border-color: darkgray;
-  margin:0 10vw ;
+  margin:4em 13vw ;
+  border-bottom:ridge 4px;
+
+
 }
 .productimage{
   margin:3vw
+
 }
 .productname{
   display: block;
@@ -184,9 +217,9 @@ grid-template-columns: 1fr 1fr 1fr;
 } 
 
 .desc{
-  border-top:ridge 4px;
-  margin: 1em 10vw;
-  text-align: center;
+  margin: 1em 20vw;
+  width: 500px;
+
 }
 
 .quan{
@@ -258,6 +291,7 @@ button:hover
   margin-right: 2rem;
   
 }
+
 /* popupform */
 .modal {
   display: none; /* Hidden by default */
@@ -335,6 +369,33 @@ img.avatar {
 }
 form {
   border: 4px solid #f1f1f1;
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: rgb(212, 157, 38);
+  content: ">\00a0";
+}
+ul.breadcrumb li a {
+  color: #9b7014;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #9e682a;
+  text-decoration: underline;
+}
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+
 }
 
 /* Full-width inputs */
@@ -348,7 +409,9 @@ input[type=text], input[type=password] {
 }
 
 /* Set a style for all buttons */
+
 .button {
+
   background-color: #04AA6D;
   color: white;
   padding: 14px 20px;
@@ -369,6 +432,33 @@ button:hover {
   padding: 10px 18px;
   background-color: #f44336;
 }
+
+
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
@@ -378,7 +468,8 @@ button:hover {
   .cancelbtn {
     width: 100%;
   }
-}
+
+  }
 /* animate search icons */
 #search {
  width: 100px; 
@@ -389,4 +480,5 @@ button:hover {
 /* When the input field gets focus, change its width to 100% */
 #search:focus {
   width: 100%;
+
 }

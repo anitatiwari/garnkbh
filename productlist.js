@@ -1,14 +1,16 @@
 const urlParams = new URLSearchParams(window.location.search);
+
 const collection = urlParams.get("collection");
 
-
-const url = "https://garnkbh-492c.restdb.io/rest/garnkbh?collection=" +collection;
+//https://garnkbh-492c.restdb.io/rest/garnkbh?q={%22collection%22:%20%22Accessories%22}
+const url = `https://garnkbh-492c.restdb.io/rest/garnkbh?q={"collection": "${collection}"}`;
+console.log(url)
 const options = {
   headers: {
     "x-apikey": "61acfc6f72a03f5dae822131",
   },
 };
-fetch(url, options)
+fetch(url,options)
   .then(function (res) {
     return res.json();
   })
