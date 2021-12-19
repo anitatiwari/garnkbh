@@ -39,6 +39,7 @@ document.querySelector(".smallimg2").src=product.img3;
   document.querySelector(".description4").textContent = product.description4;
 
  document.querySelector(".productName").textContent=product.name;
+
 }
 
 // //   document.querySelector("a").href = "productpage.html?id=" + product.id;
