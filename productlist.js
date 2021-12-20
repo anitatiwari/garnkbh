@@ -27,22 +27,19 @@ function handleProductList(data) {
 function showProduct( product){
   
         console.log(product);
-       
+ //grab template
         const template = document.querySelector("#template2").content;
+//copy content
         const copy = template.cloneNode(true);
-
-        // copy.querySelector("h5").textcontent=`${product.brand}`;
       
-        // copy.querySelector(".brand").textContent=product.brand;
-        // copy.querySelector("a").href = "product.html?id=" + product._id;
         copy.querySelector("a").href +=product._id;
 
         copy.querySelector(".productName1").textContent=product.name;
-     copy.querySelector( "img"  ).src =product.image ;
-     copy.querySelector(".price").textContent = `${product.price}`;
-    //  copy.querySelector(".brand").textContent = product.brand;
-
+        copy.querySelector( "img"  ).src =product.image ;
+        copy.querySelector(".price").textContent = `${product.price}`;
+//grap parent
         const parent = document.querySelector("main");
+//append
         parent.appendChild(copy);
   
 ;}
