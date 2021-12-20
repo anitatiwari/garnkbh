@@ -12,8 +12,6 @@ const options = {
   },
 };
 
-          
-
 fetch(url,options)
 
   .then(function (res) {
@@ -41,25 +39,6 @@ document.querySelector(".smallimg2").src=product.img3;
  document.querySelector(".productName").textContent=product.name;
 
 }
-
-// //   document.querySelector("a").href = "productpage.html?id=" + product.id;
-//   document.querySelector(".productName").textContent=product.name;
-
-//   document.querySelector(".productimage").src = product.image;
-// document.querySelector(".price").textContent = `${product.price}`;
-
-// document.querySelector(".smallimg1").src=product.img1;
-// document.querySelector(".smallimg2").src=product.img2;
-
-//   document.querySelector(".description1").textContent = product.description1;
-
-//   document.querySelector(".description2").textContent = product.description2;
-//   document.querySelector(".description3").textContent = product.description3;
-//   document.querySelector(".description4").textContent = product.description4;}
-
-
-
-
 
 
 
