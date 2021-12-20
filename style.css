@@ -330,7 +330,7 @@ button:hover
 /* Avatar image */
 img.avatar {
   width: 30%;
-  border-radius: 20%;
+  /* border-radius: 20%; */
   padding-left: 16vw;
 
 }
@@ -457,7 +457,7 @@ button:hover {
 /* Avatar image */
 img.avatar {
   width: 40%;
-  border-radius: 50%;
+
 }
 
 /* Add padding to containers */
